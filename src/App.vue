@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="left-top">
-      <a href="https://github.com/hellowuxin/vue3-mindmap" target="_blank">GitHub</a>
+      <a href="https://github.com/enurm/vue3-mindmap" target="_blank">GitHub</a>
     </div>
     <div class="right-top"><span>Props</span></div>
     <mindmap
@@ -27,8 +27,8 @@
       <div>
         <label for="language-select">Language</label>
         <select id="language-select" v-model="locale">
+          <option value="en" selected>English</option>
           <option value="zh">简体中文</option>
-          <option value="en">English</option>
           <option value="ptBR">Brazilian Portuguese</option>
         </select>
       </div>
@@ -79,7 +79,7 @@ export default defineComponent({
     })
     const data = ref(learn)
     const onChange = () => console.log('update:model-value')
-    const locale = ref<Locale>('zh')
+    const locale = ref<Locale>('en')
 
     return {
       data,

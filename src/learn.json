@@ -1,56 +1,55 @@
 [
   {
-    "name":"如何学习D3",
+    "name":"Learn",
     "children":
     [
       {
-        "name":"预备知识",
+        "name":"Programming",
         "children": [
           { "name":"HTML & CSS" },
           { "name":"JavaScript" },
           { "name":"DOM" },
-          { "name":"SVG" },
-          { "name":"test\ntest" }
+          { "name":"SVG" }
         ]
       },
       { 
-        "name":"安装",
+        "name":"Geography",
         "collapse": true,
         "children": [
-          { "name": "折叠节点" }
+          { "name": "Norway" }
         ]
       },
       {
-        "name":"入门",
+        "name":"Sport",
         "children":[
-          { "name":"选择集" },
-          { "name":"test" },
-          { "name":"绑定数据" },
-          { "name":"添加删除元素" },
+          { "name":"Swimming" },
+          { "name":"Golf" },
+          { "name":"Climbing" },
+          { "name":"Scuba diving" },
           {
-            "name":"简单图形",
+            "name":"Soccer",
             "children":
             [
-              { "name":"柱形图" },
-              { "name":"折线图" },
-              { "name":"散点图" }]
+              { "name":"Rosenborg" },
+              { "name":"Liverpool FC" },
+              { "name":"AC Milan" }]
           },
-          { "name":"比例尺" },
-          { "name":"生成器" },
-          { "name":"过渡" }
+          { "name":"Chess" },
+          { "name":"Tennis" },
+          { "name":"Volleyball" }
         ],
         "left": true
       },
       { 
-        "name":"进阶",
+        "name":"Music",
         "left": true 
       },
       {
-        "name":"一级节点",
+        "name":"Math",
         "children": [
-          { "name":"子节点1" },
-          { "name":"子节点2" },
-          { "name":"子节点3" }
+          { "name":"10" },
+          { "name":"100" },
+          { "name":"1000" }
         ]
       }
     ]

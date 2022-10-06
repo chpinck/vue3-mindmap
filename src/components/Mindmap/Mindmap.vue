@@ -56,7 +56,6 @@ export default defineComponent({
       type: Array as PropType<Data[]>,
       required: true
     },
-    // 绘制所需的变量
     xGap: { type: Number, default: xGap },
     yGap: { type: Number, default: yGap },
     branch: {
@@ -69,7 +68,6 @@ export default defineComponent({
       default: scaleExtent
     },
     sharpCorner: Boolean,
-    // 操作许可
     centerBtn: Boolean,
     fitBtn: Boolean,
     downloadBtn: Boolean,
@@ -81,10 +79,9 @@ export default defineComponent({
     ctm: Boolean,
     zoom: Boolean,
     // i18n
-    locale: { type: String as PropType<Locale>, default: 'zh' }
+    locale: { type: String as PropType<Locale>, default: 'en' }
   },
   setup (props, context) {
-    // 立即执行
     watchEffect(() => i18next.changeLanguage(props.locale))
     watchEffect(() => emitter.emit('scale-extent', props.scaleExtent))
     watchEffect(() => emitter.emit('branch', props.branch))

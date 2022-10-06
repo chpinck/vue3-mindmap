@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import path from 'path'
 import stringHash from 'string-hash'
+import { ViteMinifyPlugin } from 'vite-plugin-minify';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -10,7 +11,7 @@ export default defineConfig({
       { find: '@', replacement: path.resolve(__dirname, './src') }
     ]
   },
-  plugins: [vue()],
+  plugins: [vue(), ViteMinifyPlugin({})],
   base: '/vue3-mindmap/',
   build: {
     outDir: 'docs'

@@ -108,7 +108,7 @@ export const onClickMenu = (name: MenuEvent): void => {
   switch (name) {
     case 'zoomfit': fitView(); break
     case 'zoomin': scaleView(true); break
-    case 'zoomout': scaleView(true); break
+    case 'zoomout': scaleView(false); break
     case 'add': addAndEdit(new MouseEvent('click'), getSelectedGData()); break
     case 'delete': del(getSelectedGData().id); break
     case 'delete-one': delOne(getSelectedGData().id); break

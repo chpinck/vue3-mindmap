@@ -1,5 +1,13 @@
 # Changelog
 
+### [0.6.0] (2022-10-06)
+
+* Fork from https://github.com/hellowuxin/vue3-mindmap/
+* Update dependencies
+* Change default language to english
+* Fix issue: https://github.com/hellowuxin/vue3-mindmap/issues/43
+* NpmJs: https://www.npmjs.com/package/enurm-vue3-mindmap
+
 ### [0.5.12](https://github.com/hellowuxin/vue3-mindmap/compare/v0.5.11...v0.5.12) (2022-03-05)
 
 

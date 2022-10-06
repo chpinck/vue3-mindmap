@@ -4,12 +4,12 @@ import en from './en'
 import ptBR from './ptBR'
 
 i18next.init({
-  fallbackLng: 'zh',
-  lng: 'zh', // if you're using a language detector, do not define the lng option
+  fallbackLng: 'en',
+  lng: 'en', // if you're using a language detector, do not define the lng option
   // debug: true,
   resources: {
-    zh,
     en,
+    zh,
     ptBR
   }
 })
