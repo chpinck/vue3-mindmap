@@ -1,5 +1,5 @@
 {
-  "name": "vue3-mindmap",
+  "name": "@enurm/vue3-mindmap",
   "description": "Mindmap component for Vue3",
   "author": "Rune Myrhaug",
   "license": "MIT",
