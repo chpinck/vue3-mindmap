@@ -3,6 +3,7 @@ node_modules
 /dist
 coverage
 
+enurm-vue3-mindmap*.tgz
 
 # local env files
 .env.local
