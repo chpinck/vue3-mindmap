@@ -22,7 +22,7 @@ export default defineConfig({
       name: 'enurm-vue3-mindmap',
       // the proper extensions will be added
       // fileName: 'enurm-vue3-mindmap'
-      // formats: ['es', 'umd']
+      formats: ['es', 'umd']
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
