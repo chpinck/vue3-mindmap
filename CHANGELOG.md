@@ -1,5 +1,9 @@
 # Changelog
 
+### [0.6.1] (2022-10-07)
+
+* Fix NPM Package
+
 ### [0.6.0] (2022-10-06)
 
 * Fork from https://github.com/hellowuxin/vue3-mindmap/
