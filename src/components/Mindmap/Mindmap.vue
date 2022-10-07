@@ -82,6 +82,7 @@ export default defineComponent({
     locale: { type: String as PropType<Locale>, default: 'en' }
   },
   setup (props, context) {
+
     watchEffect(() => i18next.changeLanguage(props.locale))
     watchEffect(() => emitter.emit('scale-extent', props.scaleExtent))
     watchEffect(() => emitter.emit('branch', props.branch))
@@ -91,6 +92,7 @@ export default defineComponent({
     watchEffect(() => addNodeBtn.value = props.edit && props.addNodeBtn)
     watchEffect(() => mmprops.value.drag = props.drag)
     watchEffect(() => mmprops.value.edit = props.edit)
+
     // onMounted
     onMounted(() => {
       if (!svgEle.value || !gEle.value || !asstSvgEle.value || !foreignEle.value || !foreignDivEle.value) { return }
