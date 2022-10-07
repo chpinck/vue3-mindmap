@@ -1,17 +1,17 @@
 {
-  "name": "enurm-vue3-mindmap",
+  "name": "vue3-mindmap",
   "description": "Mindmap component for Vue3",
   "author": "Rune Myrhaug",
   "license": "MIT",
   "files": [
     "dist"
   ],
-  "main": "./dist/enurm-vue3-mindmap.umd.js",
+  "main": "./dist/vue3-mindmap.umd.js",
   "module": "./dist/enurm-vue3-mindmap.es.js",
   "exports": {
     ".": {
-      "import": "./dist/enurm-vue3-mindmap.es.js",
-      "require": "./dist/enurm-vue3-mindmap.umd.js"
+      "import": "./dist/vue3-mindmap.es.js",
+      "require": "./dist/vue3-mindmap.umd.js"
     },
     "./dist/style.css": "./dist/style.css"
   },
