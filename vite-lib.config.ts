@@ -1,7 +1,8 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import { ViteMinifyPlugin } from 'vite-plugin-minify'
+// import dts from 'vite-plugin-dts'
 import path from 'path'
-import stringHash from 'string-hash'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -10,7 +11,7 @@ export default defineConfig({
       { find: '@', replacement: path.resolve(__dirname, './src') }
     ]
   },
-  plugins: [vue()],
+  plugins: [vue(), ViteMinifyPlugin({})],
   build: {
     lib: {
       entry: path.resolve(__dirname, './src/components/Mindmap'),
@@ -22,16 +23,6 @@ export default defineConfig({
         globals: {
           vue: 'Vue'
         }
-      }
-    }
-  },
-  css: {
-    modules: {
-      generateScopedName: (name, filename, css) => {
-        const f = filename.split('?')[0].split('.')[0]
-        const file = path.basename(f)
-        const hash = stringHash(css).toString(36).substr(0, 5);
-        return `${file}_${name}_${hash}`
       }
     }
   }
