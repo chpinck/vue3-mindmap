@@ -1,5 +1,11 @@
 # Changelog
 
+### [0.6.2] / [0.6.3] (2022-10-09)
+
+* Fix NPM Package
+* Update dependencies
+* Fix CSS Issue
+
 ### [0.6.1] (2022-10-07)
 
 * Fix NPM Package
