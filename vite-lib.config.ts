@@ -12,6 +12,7 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
+  // ,dts({tsConfigFilePath: './tsconfig.lib.json', insertTypesEntry: true})
   plugins: [vue(),cssInjectedByJsPlugin()],
   build: {
     lib: {

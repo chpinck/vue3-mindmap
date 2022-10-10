@@ -1,5 +1,9 @@
 # Changelog
 
+### [0.6.4] (2022-10-10)
+
+* Fix typescript declaration
+
 ### [0.6.2] / [0.6.3] (2022-10-09)
 
 * Fix NPM Package
