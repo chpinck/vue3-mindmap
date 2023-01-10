@@ -4,8 +4,8 @@ import en from './en'
 import ptBR from './ptBR'
 
 i18next.init({
-  fallbackLng: 'en',
-  lng: 'en', // if you're using a language detector, do not define the lng option
+  fallbackLng: 'zh',
+  lng: 'zh', // if you're using a language detector, do not define the lng option
   // debug: true,
   resources: {
     en,

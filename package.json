@@ -1,22 +1,22 @@
 {
-  "name": "enurm-vue3-mindmap",
+  "name": "ch-vue3-mindmap",
   "description": "Mindmap component for Vue3",
-  "author": "Rune Myrhaug",
+  "author": "ping",
   "license": "MIT",
   "files": [
     "dist"
   ],
-  "main": "./dist/enurm-vue3-mindmap.mjs",
-  "module": "./dist/enurm-vue3-mindmap.umd.js",
-  "types": "./dist/enurm-vue3-mindmap.d.mts",
+  "main": "./dist/ch-vue3-mindmap.mjs",
+  "module": "./dist/ch-vue3-mindmap.umd.js",
+  "types": "./dist/ch-vue3-mindmap.d.mts",
   "exports": {
     ".": {
-      "import": "./dist/enurm-vue3-mindmap.mjs",
-      "require": "./dist/enurm-vue3-mindmap.umd.js"
+      "import": "./dist/ch-vue3-mindmap.mjs",
+      "require": "./dist/ch-vue3-mindmap.umd.js"
     },
     "./dist/style.css": "./dist/style.css"
   },
-  "version": "0.6.4",
+  "version": "0.7.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -75,9 +75,9 @@
     "vue-tsc": "^1.0.1"
   },
   "bugs": {
-    "url": "https://github.com/enurm/vue3-mindmap/issues"
+    "url": "https://github.com/chpinck/vue3-mindmap/issues"
   },
-  "homepage": "https://github.com/enurm/vue3-mindmap/#readme",
+  "homepage": "https://github.com/chpinck/vue3-mindmap/#readme",
   "keywords": [
     "mindmap",
     "vue",
@@ -85,6 +85,6 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/enurm/vue3-mindmap.git"
+    "url": "git+https://github.com/chpinck/vue3-mindmap.git"
   }
 }
