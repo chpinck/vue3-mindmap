@@ -1,11 +1,11 @@
-# vue3-mindmap
+# ch-vue3-mindmap
 
 > Mindmap component for Vue3. Fork from https://github.com/hellowuxin/vue3-mindmap/
 
 ## Install
 
 ```sh
-npm install enurm-vue3-mindmap
+npm install ch-vue3-mindmap
 ```
 
 ## Example

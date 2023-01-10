@@ -1,5 +1,10 @@
 # Changelog
 
+### [0.7.0] (2023-01-10)
+
+* Fix button css path
+* Fork from https://github.com/enurm/vue3-mindmap/
+
 ### [0.6.4] (2022-10-10)
 
 * Fix typescript declaration
