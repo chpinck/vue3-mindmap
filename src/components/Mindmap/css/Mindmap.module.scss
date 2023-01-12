@@ -54,7 +54,9 @@ $seleColor: rgba($color: blue, $alpha: 0.15);
     fill: transparent;
   }
 
-  &.dragging .add-btn { visibility: hidden; }
+  &.dragging .add-btn {
+    visibility: hidden;
+  }
 
   .add-btn {
     opacity: 0;
@@ -131,8 +133,16 @@ $seleColor: rgba($color: blue, $alpha: 0.15);
 .button-list {
   position: absolute;
 
-  &.right-bottom { bottom: 0; right: 0; }
-  &.right-top { top: 0; right: 0; display: flex; }
+  &.right-bottom {
+    bottom: 0;
+    right: 0;
+  }
+
+  &.right-top {
+    top: 0;
+    right: 0;
+    display: flex;
+  }
 }
 
 .button-list button {
@@ -162,24 +172,48 @@ $seleColor: rgba($color: blue, $alpha: 0.15);
     transition: opacity 0.2s cubic-bezier(0.4, 0, 0.6, 1);
   }
 
-  &:hover::before { opacity: 0.1; }
+  &:hover::before {
+    opacity: 0.1;
+  }
 
   &.disabled {
     pointer-events: none;
 
-    i { filter: invert(85%) sepia(20%) saturate(0%) hue-rotate(125deg) brightness(86%) contrast(93%); }
+    i {
+      filter: invert(85%) sepia(20%) saturate(0%) hue-rotate(125deg) brightness(86%) contrast(93%);
+    }
   }
 
   i {
-    filter: invert(25%) sepia(40%) saturate(5050%) hue-rotate(227deg) brightness(78%) contrast(74%);
+    //filter: invert(25%) sepia(40%) saturate(5050%) hue-rotate(227deg) brightness(78%) contrast(74%);
     width: 24px;
     height: 24px;
+    background-color: #419488;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 24px auto;
 
-    &.gps { background-image: url(./icons/24px/crosshairs-gps.png) }
-    &.fit { background-image: url(./icons/24px/fit-to-page-outline.png) }
-    &.download { background-image: url(./icons/24px/download.png) }
-    &.prev { background-image: url(./icons/24px/prev.png) }
-    &.next { background-image: url(./icons/24px/next.png) }
-    &.close { background-image: url(./icons/24px/close.png) }
+    &.gps {
+      -webkit-mask-image: url(./svg/crosshairs.svg);
+    }
+
+    &.fit {
+      -webkit-mask-image: url(./svg/fit_screen.svg)
+    }
+
+    &.download {
+      -webkit-mask-image: url(./svg/download.svg);
+    }
+
+    &.prev {
+      -webkit-mask-image: url(./svg/prev.svg)
+    }
+
+    &.next {
+      -webkit-mask-image: url(./svg/next.svg)
+    }
+
+    &.close {
+      -webkit-mask-image: url(./svg/close_fill.svg)
+    }
   }
 }

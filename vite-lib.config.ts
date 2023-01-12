@@ -1,6 +1,6 @@
-import { defineConfig } from 'vite'
+import {defineConfig} from 'vite'
 import vue from '@vitejs/plugin-vue'
-import { fileURLToPath, URL } from 'node:url'
+import {fileURLToPath, URL} from 'node:url'
 // import dts from 'vite-plugin-dts'
 import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js'
 import path from 'path'
@@ -13,7 +13,7 @@ export default defineConfig({
     }
   },
   // ,dts({tsConfigFilePath: './tsconfig.lib.json', insertTypesEntry: true})
-  plugins: [vue(),cssInjectedByJsPlugin()],
+  plugins: [vue(), cssInjectedByJsPlugin()],
   build: {
     lib: {
       entry: path.resolve(__dirname, './src/components/Mindmap'),

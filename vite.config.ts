@@ -14,14 +14,4 @@ export default defineConfig({
   },
   plugins: [vue(), ViteMinifyPlugin({})],
   base: '/vue3-mindmap/',
-  css: {
-    modules: {
-      generateScopedName: (name, filename, css) => {
-        const f = filename.split('?')[0].split('.')[0]
-        const file = path.basename(f)
-        const hash = stringHash(css).toString(36).substr(0, 5);
-        return `${file}_${name}_${hash}`
-      }
-    }
-  }
 })

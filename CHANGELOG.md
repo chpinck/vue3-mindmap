@@ -1,8 +1,9 @@
 # Changelog
 
-### [0.7.0] (2023-01-10)
+### [0.7.3] (2023-01-12)
 
-* Fix button css path
+* Fix button css path, svg button
+* Update dependencies
 * Fork from https://github.com/enurm/vue3-mindmap/
 
 ### [0.6.4] (2022-10-10)
