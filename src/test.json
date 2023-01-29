@@ -1,0 +1,31 @@
+[
+  {
+    "name": "Computer programming",
+    "children": [
+      {
+        "name": "Web",
+        "children": [
+          {
+            "name": "HTML & CSS"
+          },
+          {
+            "name": "JavaScript"
+          }
+        ]
+      },
+      {
+        "name": "Windows",
+        "collapse": true,
+        "children": [
+          {
+            "name": "C#"
+          }
+        ]
+      },
+      {
+        "name": "Other",
+        "left": true
+      }
+    ]
+  }
+]

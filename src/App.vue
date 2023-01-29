@@ -2,6 +2,8 @@
   <div class="container">
     <div class="left-top">
       <a href="https://github.com/chpinck/vue3-mindmap" target="_blank">GitHub</a>
+      &nbsp;
+      <button @click="testClick">test</button>
     </div>
     <div class="right-top"><span>Props</span></div>
     <mindmap
@@ -46,6 +48,7 @@
 
 <script lang="ts">
 import learn from './learn.json'
+import testJson from './test.json'
 import { defineComponent, reactive, ref } from 'vue'
 import Mindmap from './components/Mindmap'
 import { Locale } from './components/Mindmap/interface'
@@ -81,11 +84,16 @@ export default defineComponent({
     const onChange = () => console.log('update:model-value')
     const locale = ref<Locale>('en')
 
+    const testClick=() =>{
+      data.value = testJson
+    }
+
     return {
       data,
       checkboxList,
       rangeList,
       onChange,
+      testClick,
       locale
     }
   }

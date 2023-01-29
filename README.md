@@ -53,6 +53,7 @@ export default defineComponent({
                 "children": [
                     {"name": "HTML & CSS"},
                     {"name": "JavaScript"},
+                ]
             },
             {
                 "name": "Windows",

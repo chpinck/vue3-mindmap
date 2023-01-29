@@ -61,7 +61,7 @@ export default defineComponent({
     branch: {
       type: Number,
       default: branch,
-      validator: (val: number) => val >= 1 && val <= 6 
+      validator: (val: number) => val >= 1 && val <= 6
     },
     scaleExtent: {
       type: Object as PropType<TwoNumber>,
@@ -118,6 +118,7 @@ export default defineComponent({
     })
     // watch
     watch(() => [props.branch, addNodeBtn.value, props.sharpCorner], () => {
+      changeSharpCorner.value = true
       draw()
       changeSharpCorner.value = false
     })
@@ -132,6 +133,10 @@ export default defineComponent({
     })
     watch(() => props.zoom, (val) => switchZoom(val))
     watch(() => props.ctm, (val) => switchContextmenu(val))
+    watch(() => props.modelValue,(val)=>{
+      emitter.emit('mmdata', new ImData(cloneDeep(props.modelValue[0]), xGap, yGap, getSize))
+      draw()
+    })
 
     return {
       wrapperEle,
